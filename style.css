@@ -1,0 +1,344 @@
+*{
+    margin:0px;
+    Padding:0px;
+    font-family: Arial;
+}
+.header {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient( rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/face.png);
+    background-size: cover;
+    background-position: center;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:2px 6px;
+    
+}
+nav img {
+    width: 100px;
+    background-color: aliceblue;
+    border-radius: 50px;
+    
+
+}
+.nav-link{
+    position: relative;
+    bottom:30px;
+    text-align:right;
+
+
+}
+.nav-link ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding:8px 12px ;
+}
+.nav-link ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+
+}
+.nav-link ul li::after{
+    content: "";
+    background-color:#ff0000;
+    margin:auto;
+    width:0%;
+    height: 2px;
+    display: block;
+    transition:0.5s;
+}
+.nav-link ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text-box h1{
+    font-size:50px;
+    color:#ffffff;
+    font-family: Lucida Sans;
+}
+.text-box p{
+    color:#ffffff;
+    font-size: 12px;
+    font-family:Verdana;
+    margin:10px 0 40px;
+}
+.pres-btn{
+    display:inline-block;
+    text-decoration: none;
+    padding: 12px 34px;
+    background-color: none;
+    border-style: solid;
+    border-color: #ffffff;
+    color:#ffffff;
+    position: relative;
+    cursor:pointer;
+    transition: 0.1s;
+}
+.pres-btn:hover{
+    border-color: #ff0000;
+    background-color: #ff0000;
+}
+
+  
+
+
+
+/*-------------- Services --------*/
+
+.course{
+    margin-top:auto;
+    margin-left: 200px;
+    width: 80%;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 60px;
+}
+p{
+    font-size: 26px;
+    color:#ffffff;
+    font-weight: 300px;
+    line-height: 22px;
+    padding:10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background-color: red;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin:10px 0 ;
+    color: #ffffff;
+}
+.course-col:hover{
+    box-shadow: 0px 0px 2px 0px ,rgba(0,0,0,0.2);
+
+}
+
+
+    
+
+
+/*-------------- Sites --------------*/
+
+.campus {
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.campus-col img{
+    width: 100%;
+    display:block;
+}
+.layer{
+    background: transparent;
+    position: absolute;
+    height:100%;
+    width: 100%;
+    top:0;
+    left:0;
+    transition: 0.5s;
+    
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+
+}
+.layer h3{
+    font-size:26px;
+    font-weight: 500;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    color:#ffffff;
+    transform:translateX( -50) ;
+    opacity: 0;
+    transition: 0.5s;
+
+
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+
+}
+
+/*----------------------- Activites -----------------*/
+
+
+.facilities{
+    width:80%;
+    margin-top: auto;
+    margin-left: 100px;
+    text-align: center;
+    padding:100px;
+}
+.facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.facilities-col img{
+    width:100%;
+    border-radius: 10px;
+
+
+}
+.facilities-col p{
+    color: black;
+    font-size:26px;
+    padding:0px;
+    text-align: center;
+}
+.facilities-col h3{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align:center;
+
+} 
+/*------------------- TESTIMONIAL ------------*/
+
+.testimonials {
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding:100px;
+
+}
+.testimonials-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 25px;
+    cursor: pointer;
+    
+    
+
+}
+.testimonials-col img{
+    height: 40px;
+    margin-top: 8px;
+    margin-right: 30px;
+    border-radius: 50%;
+    float:top;
+    
+
+}
+.testimonials-col p{
+    padding-left: 6px;
+    color:black;
+    align-items: right;
+    font-size: 14px;
+
+    
+}
+.testimonials-col h3{
+
+    
+    color:black;
+
+    
+
+}
+
+.testimonials-col .fa{
+    color:#f44336;
+    
+}
+
+
+    
+
+/*----------------Call to action ----------*/
+
+.cta{
+    margin:100px auto;
+    width:80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/bk.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding:100px 0;
+    border-radius: 10px;
+
+}
+.cta h1{
+    color: #ffffff;
+    margin-bottom: 40px;
+    padding: 0px;
+}
+
+
+
+
+/*----------------footer ----------*/
+
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: black;
+}
+.footer p{
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+
+ 
+
+
+
+
+
+
